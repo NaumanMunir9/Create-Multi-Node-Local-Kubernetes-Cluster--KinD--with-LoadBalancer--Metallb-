@@ -34,3 +34,13 @@ kubectl wait --namespace metallb-system \
                 --selector=app=metallb \
                 --timeout=90s
 ```
+
+##### Setup address pool used by loadbalancers
+
+```shell
+docker network inspect -f '{{.IPAM.Config}}' kind
+```
+
+```shell
+kubectl apply -f https://kind.sigs.k8s.io/examples/loadbalancer/metallb-config.yaml
+```
