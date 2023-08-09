@@ -17,3 +17,7 @@ nodes:
 - role: worker
 - role: worker
 ```
+
+#### Installing Metallb in KinD Kubernetes
+
+[Installing Metallb in KinD](https://kind.sigs.k8s.io/docs/user/loadbalancer/)
